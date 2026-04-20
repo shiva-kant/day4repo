@@ -1,0 +1,12 @@
+name: hello world ci
+on:
+  push:
+    baranch: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: code one
+       uses: actions/checkout@v4
+     - name: hello-world
+       run: ./hello.sh
